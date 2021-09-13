@@ -21,7 +21,7 @@
             <div class="thumbnail"></div>
           </div>
           <div class="thumbnail-container">
-            <div class="thumbnail below-phone youtube"></div>
+            <div class="thumbnail below-phone"></div>
           </div>
           <div class="thumbnail-container">
             <div class="thumbnail"></div>

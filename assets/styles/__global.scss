@@ -36,7 +36,7 @@ a {
   #background {
     position: absolute;
     left: 50%;
-    top: -170px;
+    top: -120px;
     transform: translateX(-50%) rotate(-15deg);
     z-index: -1;
 
@@ -45,10 +45,12 @@ a {
 
       &:nth-child(2) {
         position: relative;
-        left: 220px;
+        left: 226px;
 
-        .thumbnail.below-phone {
-          opacity: 0;
+        @media screen and (min-width: 576px) {
+          .thumbnail.below-phone {
+            opacity: 0;
+          }
         }
       }
 
@@ -103,8 +105,12 @@ a {
           }
 
           &.below-phone {
+            border-radius: 50px;
+            
+            width: 336px;
+            margin: 40px auto 0;
 
-            &:before {
+            &:after {
               content: '';
               
               position: absolute;

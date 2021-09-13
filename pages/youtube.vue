@@ -21,7 +21,7 @@
             <div class="thumbnail"><span style="transform: scaleX(0.9);">YouTube</span></div>
           </div>
           <div class="thumbnail-container">
-            <div class="thumbnail below-phone"></div>
+            <div class="thumbnail below-phone youtube"></div>
           </div>
           <div class="thumbnail-container">
             <div class="thumbnail"></div>

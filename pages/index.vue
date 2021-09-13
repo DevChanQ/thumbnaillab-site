@@ -45,7 +45,11 @@
           </div>
         </div>
       </div>
-      <router-link to="/" id="icon"><img src="/icon-placeholder.png" width="100%" /></router-link>
+      <header>
+        <router-link to="#main">
+          <div id="icon-image"><img id="icon-image" src="/icon-placeholder.png" width="100%" /></div>
+        </router-link>
+      </header>
       <div id="phone">
         <div id="phone-aspect-ratio">
           <div id="screenshots">
@@ -54,7 +58,10 @@
         </div>
       </div>
     </div>
-    <main>
+    <main id="main">
+      <router-link to="#main">
+        <div id="icon-image"><img id="icon-image" src="/icon-placeholder.png" width="100%" /></div>
+      </router-link>
       <h1>Thumbnail Lab</h1>
       <p>Stunning thumbnail for your content</p>
       <div id="download-from" class="buttons-container">

@@ -1,5 +1,5 @@
 <template>
-  <div id="thumbnaillab" class="youtube">
+  <div id="thumbnaillab">
     <div id="hero">
       <div id="background">
         <div class="row">
@@ -7,7 +7,7 @@
             <div class="thumbnail"></div>
           </div>
           <div class="thumbnail-container">
-            <div class="thumbnail"></div>
+            <div class="thumbnail youtube"></div>
           </div>
           <div class="thumbnail-container">
             <div class="thumbnail"></div>
@@ -18,10 +18,10 @@
         </div>
         <div class="row">
           <div class="thumbnail-container">
-            <div class="thumbnail"><span style="transform: scaleX(0.9);">YouTube</span></div>
+            <div class="thumbnail youtube"><span style="transform: scaleX(0.9);">YouTube</span></div>
           </div>
           <div class="thumbnail-container">
-            <div class="thumbnail below-phone youtube"></div>
+            <div class="thumbnail below-phone"></div>
           </div>
           <div class="thumbnail-container">
             <div class="thumbnail"></div>
@@ -38,7 +38,7 @@
             <div class="thumbnail empty"></div>
           </div>
           <div class="thumbnail-container">
-            <div class="thumbnail"></div>
+            <div class="thumbnail youtube"><span style="transform: scaleX(0.9);">YouTube</span></div>
           </div>
           <div class="thumbnail-container">
             <div class="thumbnail"></div>
@@ -74,7 +74,7 @@
       </div>
       <h2>Other Use Cases:</h2>
       <div id="use-cases" class="buttons-container">
-        <a href="javascript: void(0);"><h2>Instagram</h2></a>
+        <router-link to="instagram"><h2>Instagram</h2></router-link>
       </div>
     </main>
     <footer>

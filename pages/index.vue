@@ -75,7 +75,7 @@
       <h2>Use Cases</h2>
       <div id="use-cases" class="buttons-container">
         <router-link to="youtube"><h2>YouTube</h2></router-link>
-        <a href="javascript: void(0);"><h2>Instagram</h2></a>
+        <router-link to="instagram"><h2>Instagram</h2></router-link>
       </div>
     </main>
     <footer>

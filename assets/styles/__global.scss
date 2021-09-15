@@ -78,6 +78,10 @@ body {
       display: flex;
       opacity: 0.3;
 
+      &:nth-child(1) {
+        opacity: 0.08;
+      }
+
       &:nth-child(2) {
         opacity: 1;
 
@@ -103,7 +107,6 @@ body {
           overflow: hidden;
 
           color: white;
-          border: 5px solid var(--border-color);
 
           width: 400px;
           line-height: 219px;
@@ -111,6 +114,8 @@ body {
           font-size: 60px;
           font-weight: bold;
 
+          // background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='60' ry='60' stroke='%23333' stroke-width='15' stroke-dasharray='30%2c 30' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+          border: 6px solid black;
           border-radius: 60px;
 
           & > * {
@@ -126,6 +131,15 @@ body {
 
             display: block;
             padding-top: 56.25%;
+          }
+
+          &.lab {
+            border: none;
+
+            background-image: url(/hero.png);
+            background-size: contain;
+            background-position: center right;
+            background-repeat: no-repeat;
           }
 
           &.instagram {
@@ -196,6 +210,8 @@ body {
     border-radius: 15px;
     box-shadow: 0 10px 20px -3px rgba(0,0,0,.3);
 
+    overflow: hidden;
+
     #phone-aspect-ratio {
       position: relative;
 
@@ -223,10 +239,13 @@ main {
   }
 
   p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   #icon-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
     margin-bottom: 40px;
     
     @media screen and (max-width: 575px) {

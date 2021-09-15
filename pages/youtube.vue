@@ -18,7 +18,7 @@
         </div>
         <div class="row">
           <div class="thumbnail-container">
-            <div class="thumbnail youtube"><span style="transform: scaleX(0.9);">YouTube</span></div>
+            <div class="thumbnail lab"></div>
           </div>
           <div class="thumbnail-container">
             <div class="thumbnail below-phone"></div>
@@ -47,28 +47,28 @@
       </div>
       <header>
         <router-link to="#main">
-          <div id="icon-image"><img id="icon-image" src="/icon-placeholder.png" width="100%" /></div>
+          <div id="icon-image"><img id="icon-image" src="/icon.png" width="100%" /></div>
         </router-link>
       </header>
       <div id="phone">
         <div id="phone-aspect-ratio">
           <div id="screenshots">
-
+            <img src="/screenshots/screenshot 2.png" width="100%" />
           </div>
         </div>
       </div>
     </div>
     <main id="main">
       <router-link to="#main">
-        <div id="icon-image"><img id="icon-image" src="/icon-placeholder.png" width="100%" /></div>
+        <div id="icon-image"><img id="icon-image" src="/icon.png" width="100%" /></div>
       </router-link>
       <h1>Thumbnail Lab</h1>
-      <p>Thinking about how to make beautiful thumbnails that attract viewers?</p>
+      <p>Thinking about how to make beautiful thumbnails to attract viewers?</p>
       <div id="download-from" class="buttons-container">
-        <a href="javascript: void(0);">
+        <a href="javascript: void(0);" @click="$ga.event({eventCategory: 'downloads',eventAction: 'click',eventLabel: 'iOS'})">
           <img src="/Download_on_the_App_Store_Badge.svg" width="100%" />
         </a>
-        <a class="android-button" href="javascript: void(0);" style="border-radius: 7px;">
+        <a class="android-button" href="javascript: void(0);" @click="$ga.event({eventCategory: 'downloads',eventAction: 'click',eventLabel: 'Android'})" style="border-radius: 7px;">
           <img src="/google-play-badge.png" width="100%" />
         </a>
       </div>
@@ -86,7 +86,9 @@
 
 <script>
 export default {
-  
+  head: {
+    title: 'Thumbnail Lab - make your own stunning YouTube thumbnails'
+  }
 }
 </script>
 

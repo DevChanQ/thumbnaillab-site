@@ -4,18 +4,26 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Thumbnail Lab - Make your own stunning thumbnail',
+    title: 'Thumbnail Lab - Make your own stunning thumbnails',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Are you thinking about how to make a thumbnail to attract new audiences? Thumbnail Lab provides you with the tools to make your own thumbnail quick and fast.' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: "Are you thinking about how to make a thumbnail to attract new followers? Thumbnail Lab provides you with the tools to make your own stunning thumbnail quick and fast. Whether it's YouTube, Instagram, or other major content platforms, Thumbnail Lab can help you kickstart your career." },
+      { name: 'format-detection', content: 'telephone=no' },
+
+      { name: 'theme-color', content: '#ffffff' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon/favicon-16x16.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/favicon/android-chrome-192x192.png' },
+
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicon/apple-touch-icon.png' },
+
+      { rel: 'manifest', href: '/favicon/site.webmanifest' }
     ]
   },
 
@@ -34,11 +42,19 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/google-analytics'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/sitemap'
   ],
+  sitemap: {
+    hostname: 'https://thumbnaillab.app'
+  },
+  googleAnalytics: {
+    id: 'UA-142283107-2'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

@@ -79,6 +79,7 @@
       </div>
     </main>
     <footer>
+      <p style="font-size: 14px;color: black;margin-bottom: 50px;">Made with &#x2764;&#xfe0f;by <a style="font-weight: bold;" href="https://devjeff.info" target="_blank">DevJeff</a></p>
       <p>Google Play and the Google Play logo are trademarks of Google LLC.</p>
       <p>App Store® and iPhone® are trademarks of Apple Inc.</p>
     </footer>

@@ -68,7 +68,7 @@
         <a href="javascript: void(0);" @click="$ga.event({eventCategory: 'downloads',eventAction: 'click',eventLabel: 'iOS'})">
           <img src="/Download_on_the_App_Store_Badge.svg" width="100%" />
         </a>
-        <a class="android-button" href="javascript: void(0);" @click="$ga.event({eventCategory: 'downloads',eventAction: 'click',eventLabel: 'Android'})" style="border-radius: 7px;">
+        <a class="android-button" target="_blank" href="https://play.google.com/store/apps/details?id=com.thumbnaillab" @click="$ga.event({eventCategory: 'downloads',eventAction: 'click',eventLabel: 'Android'})" style="border-radius: 7px;">
           <img src="/google-play-badge.png" width="100%" />
         </a>
       </div>

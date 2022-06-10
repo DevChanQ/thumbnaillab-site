@@ -59,13 +59,13 @@
       </div>
     </div>
     <main id="main">
-      <router-link to="#main">
+      <router-link  :to="{name: 'index'}">
         <div id="icon-image"><img id="icon-image" src="/icon.png" width="100%" /></div>
       </router-link>
-      <h1>Thumbnail Lab</h1>
+      <h1>SVG Editor</h1>
       <p>Thinking about how to make beautiful thumbnails that attract viewers?</p>
       <div id="download-from" class="buttons-container">
-        <a href="javascript: void(0);" @click="$ga.event({eventCategory: 'downloads',eventAction: 'click',eventLabel: 'iOS'})">
+        <a target="_blank" href="https://apps.apple.com/us/app/svg-editor-view-design-svg/id1624759841" @click="$ga.event({eventCategory: 'downloads',eventAction: 'click',eventLabel: 'iOS'})">
           <img src="/Download_on_the_App_Store_Badge.svg" width="100%" />
         </a>
         <a class="android-button" target="_blank" href="https://play.google.com/store/apps/details?id=com.thumbnaillab" @click="$ga.event({eventCategory: 'downloads',eventAction: 'click',eventLabel: 'Android'})" style="border-radius: 7px;">

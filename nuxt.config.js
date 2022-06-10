@@ -4,14 +4,14 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Thumbnail Lab - Make your own stunning thumbnails',
+    title: 'SVG Editor - View & Design Beautiful SVG',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "Are you thinking about how to make a thumbnail to attract new followers? Thumbnail Lab provides you with the tools to make your own stunning thumbnail quick and fast. Whether it's YouTube, Instagram, or other major content platforms, Thumbnail Lab can help you kickstart your career." },
+      { hid: 'description', name: 'description', content: "SVG Editor is a free (with in-app purchases) standalone app/tool that provides you with the tools to view, edit and create SVG (Vector Graphics) on your mobile device. Whether it's designing graphics for your Youtube channel or creating a UI wireframe for your latest web design project, SVG Editor will boost your graphic design productivity." },
       { name: 'format-detection', content: 'telephone=no' },
 
       { name: 'theme-color', content: '#ffffff' },

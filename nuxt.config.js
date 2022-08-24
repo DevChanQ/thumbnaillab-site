@@ -23,6 +23,7 @@ export default {
       { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/favicon/android-chrome-192x192.png' },
 
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicon/apple-touch-icon.png' },
+      { rel: 'mask-icon', color: '#5bbad5', href: '/favicon/safari-pinned-tab.svg' },
 
       { rel: 'manifest', href: '/favicon/site.webmanifest' }
     ]

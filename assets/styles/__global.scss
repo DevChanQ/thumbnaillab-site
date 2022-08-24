@@ -67,6 +67,10 @@ body {
   padding: 35px 0 130px;
   overflow: hidden;
 
+  @media screen and (max-width: 575px) {
+    padding-bottom: 35px;
+  }
+
   #background {
     position: absolute;
     left: 50%;
@@ -95,7 +99,7 @@ body {
 
       &:nth-child(3) {
         position: relative;
-        right: 70px;
+        right: -30px;
       }
 
       .thumbnail-container {
@@ -197,32 +201,30 @@ body {
 
   #phone {
     @media screen and (min-width: 576px) {
-      transform: rotate(-15deg);
+      transform: translate(32px, -0) rotate(-15deg);
     }
 
-    width: 67%;
-    max-width: 270px;
+    position: relative;
+    width: 80%;
+    max-width: 350px;
     margin: 0 auto;
     box-sizing: content-box;
 
-    background: white;
-    border: 6px solid var(--border-color);
-    border-radius: 15px;
-    box-shadow: 0 10px 20px -3px rgba(0,0,0,.3);
+    // background: red;
+    // border: 6px solid var(--border-color);
+    // border-radius: 15px;
+    // box-shadow: 0 10px 20px -3px rgba(0,0,0,.3);
 
     overflow: hidden;
 
-    #phone-aspect-ratio {
-      position: relative;
-
-      padding-top: 177.8%;
-
+    &.iphone {
       #screenshots {
         position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
+        left: 8%;
+        right: 8%;
+        top: 3%;
         bottom: 0;
+        z-index: -1;
       }
     }
   }

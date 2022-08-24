@@ -50,11 +50,10 @@
           <div id="icon-image"><img id="icon-image" src="/icon.png" width="100%" /></div>
         </router-link>
       </header>
-      <div id="phone">
-        <div id="phone-aspect-ratio">
-          <div id="screenshots">
-            <img src="/screenshots/screenshot 1.png" width="100%" />
-          </div>
+      <div id="phone" class="iphone">
+        <img src="/frames/iphone.png" width="100%" />
+        <div id="screenshots">
+          <img src="/screenshots/screenshot 2.png" width="100%" />
         </div>
       </div>
     </div>

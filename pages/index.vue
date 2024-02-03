@@ -47,28 +47,28 @@
       </div>
       <header>
         <router-link to="#main">
-          <div id="icon-image"><img id="icon-image" src="/icon.png" width="100%" /></div>
+          <div id="icon-image"><img id="icon-image" src="~/assets/images/icon.png" width="100%" /></div>
         </router-link>
       </header>
       <div id="phone" class="iphone">
-        <img src="/frames/iphone.png" width="100%" />
+        <img src="~/assets/images/frames/iphone.png" width="100%" />
         <div id="screenshots">
-          <img src="/screenshots/screenshot_1.png" width="100%" />
+          <img src="~/assets/images/screenshots/screenshot_1.png" width="100%" />
         </div>
       </div>
     </div>
     <main id="main">
       <router-link to="#main">
-        <div id="icon-image"><img id="icon-image" src="/icon.png" width="100%" /></div>
+        <div id="icon-image"><img id="icon-image" src="~/assets/images/icon.png" width="100%" /></div>
       </router-link>
       <h1>SVG Editor</h1>
       <p>View & Design Beautiful SVG</p>
       <div id="download-from" class="buttons-container">
         <a target="_blank" href="https://apps.apple.com/us/app/svg-editor-view-design-svg/id1624759841" @click="$ga.event({eventCategory: 'downloads',eventAction: 'click',eventLabel: 'iOS'})">
-          <img src="/Download_on_the_App_Store_Badge.svg" width="100%" />
+          <img src="~/assets/images/Download_on_the_App_Store_Badge.svg" width="100%" />
         </a>
         <a class="android-button" target="_blank" href="https://play.google.com/store/apps/details?id=com.thumbnaillab" @click="$ga.event({eventCategory: 'downloads',eventAction: 'click',eventLabel: 'Android'})" style="border-radius: 7px;">
-          <img src="/google-play-badge.png" width="100%" />
+          <img src="~/assets/images/google-play-badge.png" width="100%" />
         </a>
       </div>
       <h2>Use Cases</h2>

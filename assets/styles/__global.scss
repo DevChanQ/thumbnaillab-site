@@ -140,7 +140,7 @@ body {
           &.lab {
             border: none;
 
-            background-image: url(/hero.png);
+            background-image: url(@/assets/images/hero.png);
             background-size: contain;
             background-position: center right;
             background-repeat: no-repeat;
